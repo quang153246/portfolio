@@ -1,0 +1,11 @@
+{
+  "common": {
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Project",
+      "experience": "Experience",
+      "contact": "Contact"
+    }
+  }
+}
