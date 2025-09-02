@@ -1,4 +1,4 @@
-import { Bot } from "lucide-react";
+import { Bot, Check } from "lucide-react";
 import { NAVBARS } from "../../constants/navbar";
 import ThreeDots from "../common/three-dots";
 import {
@@ -21,7 +21,7 @@ const Header = () => {
   const [activeLink, setActiveLink] = useState<string>("home");
 
   return (
-    <div className="rounded-2xl h-20 bg-gray-900 px-4 flex fixed left-3 right-3 top-3 md:left-5 md:right-5 md:top-5 border border-purple-400/50 shadow-[0_0_12px_rgba(168,85,247,0.5)] transition-all">
+    <div className="z-20 rounded-2xl h-20 bg-gray-900 px-4 flex fixed left-3 right-3 top-3 md:left-5 md:right-5 md:top-5 border border-purple-400/50 shadow-[0_0_12px_rgba(168,85,247,0.5)] transition-all">
       <div className="m-auto w-full">
         <div className="flex items-center gap-3">
           <ThreeDots size={2} />
@@ -70,13 +70,19 @@ const Header = () => {
                 {LANGUAGES.map((lang) => (
                   <DropdownMenuItem
                     key={lang.key}
-                    className="flex justify-center outline-0 hover:bg-violet-100 rounded-sm"
+                    className="flex items-center gap-1 outline-0 hover:bg-violet-100 rounded-sm px-3"
                     onClick={() => {
                       setLanguage(lang.key);
                       i18n.changeLanguage(lang.key);
                     }}
                   >
-                    <img src={`src/assets/${lang.key}.png`} className="w-10" />
+                    <img src={`src/assets/${lang.key}.png`} className="w-8" />
+                    <div className="text-sm font-medium text-gray-700 ml-2">
+                      {lang.label}
+                    </div>
+                    {language === lang.key && (
+                      <Check className="text-blue-600 w-4 h-4" />
+                    )}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
