@@ -82,7 +82,7 @@ const About = () => {
                 className="flex gap-2 items-start hover:translate-x-2 transition-transform duration-300 ease-in"
                 key={item}
               >
-                <div className=" text-cyan-600 animate-ping">●</div>
+                <div className=" text-cyan-600 animate-pulse">●</div>
                 <span className="w-fit"> {item}</span>
               </div>
             ))}
