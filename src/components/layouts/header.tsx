@@ -61,7 +61,7 @@ const Header = () => {
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center outline-0">
                 <Button className="bg-transparent hover:bg-violet-100 border border-gray-300 px-2 md:px-3">
-                  <img src={`src/assets/${language}.png`} className="w-6" />
+                  <img src={`${language}.png`} className="w-6" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -76,7 +76,7 @@ const Header = () => {
                       i18n.changeLanguage(lang.key);
                     }}
                   >
-                    <img src={`src/assets/${lang.key}.png`} className="w-8" />
+                    <img src={`${lang.key}.png`} className="w-8" />
                     <div className="text-sm font-medium text-gray-700 ml-2">
                       {lang.label}
                     </div>

@@ -2,11 +2,11 @@ export const LANGUAGES = [
   {
     key: "vi",
     label: "Việt Nam",
-    path: "src/assets/vi.png",
+    path: "vi.png",
   },
   {
     key: "en",
     label: "English",
-    path: "src/assets/en.png",
+    path: "en.png",
   },
 ];

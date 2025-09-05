@@ -20,11 +20,7 @@ const ThreeDots = (props: IProps) => {
     return () => clearInterval(interval);
   }, [animate, colors.length]);
 
-  // Tạo class size động
-  // const sizeClass = `w-${size} h-${size}`;
-
-  // Style inline để đảm bảo size hoạt động
-  const dotSize = `${size * 0.25}rem`; // size * 0.25rem (Tailwind convention)
+  const dotSize = `${size * 0.25}rem`;
 
   return (
     <div className="flex items-center gap-1.5">

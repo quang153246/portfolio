@@ -111,7 +111,7 @@ const Overview = () => {
         <div className="grow flex flex-col items-center">
           <img
             className="mt-15 w-50 aspect-square rounded-full object-cover border-4 border-blue-600 drop-shadow-2xl drop-shadow-yellow-500/30"
-            src="src/assets/avatar.jpg"
+            src="avatar.jpg"
           />
           <div className="w-full mt-20 p-4 rounded-2xl bg-gray-700 border border-violet-600 drop-shadow-xl hover:drop-shadow-2xl drop-shadow-violet-500/50 hover:drop-shadow-violet-500/50">
             <div className="w-full bg-gray-500/50 p-3 flex gap-2">
